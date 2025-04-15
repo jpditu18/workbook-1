@@ -30,12 +30,12 @@ public class SandwichShop {
         //ask about the Loaded sandwich selection
         System.out.println("Would you like your sandwich loaded? (yes/no): ");
         myScanner.nextLine();
-        String loadedResponse = myScanner.nextLine().toLowerCase();
+        String loadedResponse = myScanner.nextLine();
 
         if (loadedResponse.equals("yes")) {
             if (size == 1) {
                 price += 1.00;
-            } else if (size == 2) {
+            } else if (size == 2){
                 price += 1.75;
             }
         }
