@@ -27,6 +27,19 @@ public class SandwichShop {
             return;
         }
 
+        //ask about the Loaded sandwich selection
+        System.out.println("Would you like your sandwich loaded? (yes/no): ");
+        myScanner.nextLine();
+        String loadedResponse = myScanner.nextLine().toLowerCase();
+
+        if (loadedResponse.equals("yes")) {
+            if (size == 1) {
+                price += 1.00;
+            } else if (size == 2) {
+                price += 1.75;
+            }
+        }
+
         //prompt for age
         System.out.println("Enter your age");
         int age = myScanner.nextInt();
